@@ -1,25 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
 <properties>
-	<entry key="makingBankbook">
-	INSERT INTO BANKBOOK VALUES(SEQ_USERNO.NEXTVAL, ?, ?, ?, ?, ?)
-	</entry>
-	<entry key="rogin">
-	SELECT * FROM BANKBOOK WHERE USER_ID = ?
-	</entry>
-	<entry key="deposit">
-	UPDATE BANKBOOK SET BALANCE = BALANCE + ? WHERE USER_NAME = ?
-	</entry>
-	<entry key="withdraw">
-	UPDATE BANKBOOK SET BALANCE = BALANCE - ? WHERE USER_NAME = ?
-	</entry>
-	<entry key="delete">
-	DELETE FROM BANKBOOK WHERE USER_ID = ? AND USER_PWD = ?
-	</entry>
-	<entry key="remittance1">
-	UPDATE BANKBOOK SET BALANCE = BALANCE + ? WHERE BANKBOOK_NO = ?
-	</entry>
-	<entry key="remittance2">
-	UPDATE BANKBOOK SET BALANCE = BALANCE - ? WHERE BANKBOOK_NO = ?
-	</entry>
+<comment>properties resources</comment>
+<entry key="password">JDBC01</entry>
+<entry key="url">jdbc:oracle:thin:@localhost:1521:xe</entry>
+<entry key="driver">oracle.jdbc.driver.OracleDriver</entry>
+<entry key="username">JDBC01</entry>
 </properties>
