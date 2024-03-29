@@ -49,7 +49,6 @@ public class 큐2 {
 					bw.write(d.getLast() + "\n");
 				}
 			}
-			
 		}
 		bw.flush();
 		bw.close();
